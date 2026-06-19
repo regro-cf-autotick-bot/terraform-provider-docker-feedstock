@@ -1,6 +1,6 @@
 {% set provider = "Docker" %}
 {% set goname = "github.com/kreuzwerker/terraform-provider-"+provider.lower() %}
-{% set version = "4.2.0" %}
+{% set version = "4.5.0" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: d7634ea824d7daeeb1aa6699c170072786f9f35ff466df4747956a97d7d86990
+  sha256: 567433e36074a0fce846fff0f15ba63a9afec9769b54411b370d9da146c0e8b7
 
 build:
   number: 0
